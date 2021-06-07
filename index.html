@@ -1,0 +1,172 @@
+<html manifest="offlinexmb.cache">
+<head>
+<title>Prb 7.55 Light (em PT-BR)</title>
+<link rel="stylesheet" href="index.css">
+<body id=cache style="color:#6089f6;font-size:32px;" onload="go();" class="bg";>
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.cache.innerHTML="<br><br>Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>"};
+function DisplayCacheProgress(){setTimeout(function(){window.cache.innerHTML="<br><br>Cache <font color=\"#ee596f\">instalada</font> com sucesso!!!";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.cache.innerHTML="<br><br>Saia, <font color=\"#ee596f\">desabilite a REDE</font> e retorne ao NAVEGADOR.";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+
+<div id=dlog></div>
+<button style=opacity:0 id="input1" onfocus="handle2()"></button>
+<button style=opacity:0 id="input2"></button>
+<button style=opacity:0 id="input3" onfocus="handle2()"></button>
+<select style=opacity:0 id="select1">
+<option value="value1">Value1</option>
+</select>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
+<script>
+function print(){}
+
+var scriptCode = '';
+
+function preloadScripts(lst){
+for(var i=0;i<lst.length;i++){var xhr=new XMLHttpRequest();xhr.open('GET',lst[i],false);xhr.send('');scriptCode+=xhr.responseText+'\n';}
+}
+
+function done(){
+    if(main_ret == 0 || main_ret == 179)
+    {
+        //alert("You're all set!");
+    }
+    else
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
+}
+
+window.midExploit = function(){
+preloadScripts(['blob.js'], go);
+}
+
+window.postExploit = function(){
+dlog.remove();
+mymenu.style.display="block";
+    setTimeout(function()
+	{
+	eval.call(window, scriptCode);
+	done();
+	}, 100);
+};
+</script>
+   <div id=mymenu style="display:none">
+   <div class="navbar">
+    <div class="subnav">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button style='font-size:25px;text-align:center;color:#6089f6' class="button button2" class="subnavbtn" >Exploit's<i class="fa fa-caret-down"></i></button>&nbsp;
+    <div class="subnav-content">
+     <br><br>
+     <button  onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U>NOVO Exploit de Sleirsgoevy</U></font><br><br>Exploração do kernel versão de <font style=\'color:#ee596f\'>03/06/2021</font>. Ativação em 12 segundos.<br>Imita o tráfego de rede <font style=\'color:#ee596f\'>legítimo</font> antes da exploração.<br>É uma exploração completa para o console PS4 com firmware 7.5x.<br>Basicamente, este é o TheFlows POC junto com os patches KROP e kernel específicos do PS4.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit03062021(); return false"><img src="exploit.png"></button>
+     <button  onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U>Exploit de Sleirsgoevy</U></font><br><br>Exploração do kernel versão de <font style=\'color:#ee596f\'>27/05/2021</font>. Ativação em 16 segundos.<br>Esta é uma exploração completa para o console PS4 com firmware 7.55.<br>Basicamente, este é o TheFlows POC junto com os patches KROP e kernel específicos do PS4.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit27052021(); return false"><img src="exploit.png"></button>
+     <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U>Exploit de Sleirsgoevy  </U></font><br><br>Exploração do kernel versão de <font style=\'color:#ee596f\'>20/05/2021</font>. Ativação em 16 segundos.<br>Esta é uma exploração completa para o console PS4 com firmware 7.55.<br>Basicamente, este é o TheFlows POC junto com os patches KROP e kernel específicos do PS4.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit20052021(); return false"><img src="exploit.png"></button>
+	 <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U>Exploit de Sleirsgoevy - mais estável no meu PS4</U></font></font><br> <br> Exploração do kernel versão de <font style=\'color:#ee596f\'>02/05/2021</font>, com 12 segundos de atraso. <br> Este é um exploit de cadeia completa para o firmware do PS4 7.55. <br> Basicamente, este é TheFlows POC junto com patches KROP e kernel específicos do PS4.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit02052021(); return false"><img src="exploit.png"></button>
+     <button  onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U> Exploit de Sleirsgoevy </U></font> <br> <br> Exploração do kernel versão de <font style=\'color:#ee596f\'>29/04/2021</font>, com 8 segundos de atraso. <br> Este é um exploit de cadeia completa para o firmware do PS4 7.55. <br> Basicamente, este é TheFlows POC junto com patches KROP e kernel específicos do PS4.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit29042021(); return false"><img src="exploit.png"></button>
+    </div>
+  </div>
+  
+  <div class="subnav">
+    <button style='font-size:25px;text-align:center;color:#6089f6' class="button button2" class="subnavbtn">Hen & Mira<i class="fa fa-caret-down"></i></button>&nbsp;
+     <div class="subnav-content">
+      <br><br>
+      <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U> GoldHen - v1.1 por SiSTRo / Joonie86 </U></font> <br> <br> Estabilidade e serviço ftp aprimorados, Homebrew Enabler, Configurações de depuração, <br> Suporte VR, Instalação de pacote remoto, Suporte para modo de descanso, <br> Suporte a HDD externo, Suporte a formato de HDD externo oficial, <br> Suporte a troféus de depuração, UART Enabler, Captura de tela Never Disable, <br> Remote Play Enabler, FTP persistente na porta 2121 (suporte ao modo<br>de repouso), Sys_dynlib_dlsym Patch, FW Bloco de atualização.'"; onmouseout="msgs.innerHTML=''" onclick="load_goldhenb(); return false"><img src="hen.png"></button>
+	  <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U> GoldHen - v1.0 Por SiSTRo / Joonie86 </U></font> <br> <br> Homebrew Enabler, Configurações de depuração, <br> Suporte VR, Instalação remota de pacote, Suporte para modo de descanso, <br> Suporte para HDD externo, Oficial Suporte de formato de HDD externo, Suporte a troféus de depuração, UART Enabler, Captura de tela Never Disable, Remote Play Enabler, <br> FTP persistente na porta 2121 (suporte a modo de repouso), <br> Sys_dynlib_dlsym Patch, Bloco de atualização FW.'"; onmouseout="msgs.innerHTML=''" onclick="load_goldhen(); return false"><img src="hen.png"></button>
+      <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U> HenB - v2.1.3 por SiSTRo / Portada para 7.55 por Karo </U></font> <br> <br> O mesmo que HEN 2.1.3, mas corrige o problema do troféu em branco para a maioria das pessoas. <br> Se o seu PSVR for atualizado para a versão de firmware mais recente, você não pode<br>usar esta versão do HEN. Mas se o seu PSVR estiver em uma versão de firmware anterior, <br> Você pode, mas deve ligar o PSVR antes de executá-lo.'"; onmouseout="msgs.innerHTML=''" onclick="load_henb(); return false"><img src="hen.png"></button>
+      <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U> Mira - v1 por OpenOrbis </U></font> </U></font> <br> <br> Mira v1 é uma carga útil e uma série de ferramentas avançadas para PS4s com jailbreak. <br> É um Homebrew Enabler que permite executar código não assinado .'"; onmouseout="msgs.innerHTML=''" onclick="load_mira(); return false"><img src="mira.png"></button>
+      <button onMouseOver="msgs.innerHTML='<font style=\'color:#ee596f\'><U> Mira - por OpenOrbis 7.55 por Karo </U></font> <br> <br>Mira v2b é uma carga útil e uma série de ferramentas avançadas para PS4s com jailbreak.<br>É um ativador Homebrew que permite executar código não assinado. <br> Spoof to 9.99 and fix rest mode Port De Karo.'"; onmouseout="msgs.innerHTML=''" onclick="load_mira2b(); return false"><img src="mira.png"></button>
+	</div>
+  </div>
+  	
+	  <br><br><br><br><br><br><br><br>
+	  <h1 id=msgs style='font-size:28px;text-align:center;color:#ffffff'></h1>
+      <div style="text-align:left;position:fixed;left:10px;bottom:10px;width:100%;font-size:20px;color:#3dff8e">
+      <div >Passou = <font color="#6089f6"><span id=passCounter></span></font>&nbsp;&nbsp;:&nbsp;&nbsp;Falhou = <font color="#ee596f"><span id=failCounter></span></font></div>
+      Versão do firmware deste PS4: <font color="#6089f6"><span id="PS4fw"></span></font> - <font color="#ee596f"><span id="infoDesb"></span></font><br>
+	  Agradecimentos: <font color="#6089f6">Leeful-KiiWii-<font color="#ee596f">Sleirsgoevy-</font>theflow-Karo-AlAzif-Joonie86-Team Synacktiv-e todos devs da cena PS4.</font>
+	  </div>
+      </div>
+	</div>
+
+<script>
+localStorage.infoDesb="ATENÇÃO! Carregue 1° um exploit.";
+window.infoDesb.innerHTML=localStorage.infoDesb;
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple"));
+if (UA == "7.55"){PS4fw.innerHTML="v"+UA};if(UA != "7.55"){PS4fw.innerHTML="Spoofed para v"+UA};
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript2(){getScript("exp_loaderPL.js",function(){});}
+</script>
+
+<script>
+if (localStorage.passcount == null) localStorage.passcount=0;
+	window.passCounter.innerHTML=localStorage.passcount;
+if (localStorage.failcount == null) localStorage.failcount=0;
+	window.failCounter.innerHTML=localStorage.failcount;
+
+function load_exploit02052021(){
+msgs.innerHTML="Carregando o exploit. Por favor, aguarde...";
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("exp_jb02052021.js",function(){setTimeout(jailbreak,000);});}loadScript();
+}
+
+function load_exploit29042021(){
+msgs.innerHTML="Carregando o exploit. Por favor, aguarde...";
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("exp_jb29042021.js",function(){setTimeout(jailbreak,000);});}loadScript();
+}
+
+function load_exploit20052021(){
+msgs.innerHTML="Carregando o exploit de 20/05/2021. Por favor, aguarde...";
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("exp_jb20052021.js",function(){setTimeout(jailbreak,500);});}loadScript();
+}
+
+function load_exploit27052021(){
+msgs.innerHTML="Carregando o exploit de 27/05/2021. Por favor, aguarde...";
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("exp_jb27052021.js",function(){setTimeout(jailbreak,500);});}loadScript();
+}
+
+function load_exploit03062021(){
+msgs.innerHTML="Carregando o NOVO exploit de 03/06/2021. Por favor, aguarde...";
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("exp_jb03062021.js",function(){setTimeout(jailbreak,500);});}loadScript();
+}
+
+function load_goldhen(){
+msgs.innerHTML="Loading GoldHen V1.0 ...";
+LoadedMSG="GoldHen V1.0 Loaded<br><font style='color:#ee596f'>Use o botão PS para sair do menu</font>";
+PLfile = "payload/pl_goldhen_1.0.bin";
+loadScript2();
+}
+
+function load_goldhenb(){
+msgs.innerHTML="Carregando GoldHen V1.1 ...";
+LoadedMSG="GoldHen V1.1 carregado.<br><font style='color:#ee596f'>Use o botão PS para sair do menu</font>";
+PLfile = "payload/pl_goldhen_1.1.bin"
+loadScript2();
+}
+
+function load_henb(){
+msgs.innerHTML="Loading HenB V2.1.3 ...";
+LoadedMSG="HenB V2.1.3 Loaded<br><font style='color:#ee596f'>Use o botão PS para sair do menu</font>";
+PLfile = "payload/pl_henb.bin"
+loadScript2();
+}
+
+function load_mira(){
+msgs.innerHTML="Loading Mira ...";
+LoadedMSG="Mira Loaded<br><font style='color:#ee596f'>Use o botão PS para sair do menu</font>";
+PLfile = "payload/pl_mira.bin"
+loadScript2();
+}
+
+function load_mira2b(){
+msgs.innerHTML="Loading Mira2b ...";
+LoadedMSG="Mira2b Loaded<br><font style='color:#ee596f'>Use o botão PS para sair do menu</font>";
+PLfile = "payload/pl_mira2b.bin"
+loadScript2();
+}
+
+</script>	
+</body>
+</html> 
